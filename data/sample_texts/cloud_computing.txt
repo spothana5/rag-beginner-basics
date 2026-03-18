@@ -1,0 +1,45 @@
+Cloud Computing Fundamentals
+
+Cloud computing is the delivery of computing services over the internet, including servers, storage, databases, networking, software, and analytics. Instead of owning and maintaining physical data centers, organizations can rent access to computing resources from cloud providers on a pay-as-you-go basis.
+
+Service Models
+
+Cloud computing is organized into three main service models:
+
+1. Infrastructure as a Service (IaaS): Provides fundamental computing resources such as virtual machines, storage, and networking. Users manage the operating system and applications while the provider manages the underlying hardware. Examples include Amazon EC2, Google Compute Engine, and Microsoft Azure Virtual Machines.
+
+2. Platform as a Service (PaaS): Provides a platform for developing, testing, and deploying applications without managing the underlying infrastructure. The provider handles the operating system, middleware, and runtime. Examples include AWS Elastic Beanstalk, Google App Engine, and Heroku.
+
+3. Software as a Service (SaaS): Delivers complete software applications over the internet on a subscription basis. Users access the software through a web browser without worrying about installation or maintenance. Examples include Google Workspace, Salesforce, Microsoft 365, and Slack.
+
+Deployment Models
+
+Cloud deployments come in several forms:
+
+- Public Cloud: Resources are shared among multiple organizations and managed by a third-party provider. This is the most common and cost-effective model for many workloads.
+- Private Cloud: Infrastructure is dedicated to a single organization, providing greater control and security. It can be hosted on-premises or by a third-party provider.
+- Hybrid Cloud: Combines public and private clouds, allowing data and applications to move between them. This provides flexibility for organizations with varying security and compliance requirements.
+- Multi-Cloud: Uses services from multiple cloud providers to avoid vendor lock-in, improve resilience, and leverage the best services from each provider.
+
+Major Cloud Providers
+
+The three largest cloud providers are:
+
+- Amazon Web Services (AWS): The market leader, offering over 200 services including compute (EC2), storage (S3), databases (RDS, DynamoDB), machine learning (SageMaker), and serverless computing (Lambda).
+- Microsoft Azure: Strong integration with Microsoft products and enterprise tools. Popular for hybrid cloud deployments and enterprise applications.
+- Google Cloud Platform (GCP): Known for data analytics (BigQuery), machine learning (Vertex AI), and Kubernetes orchestration (GKE), building on Google's expertise in large-scale distributed systems.
+
+Key Cloud Concepts
+
+- Scalability: Cloud resources can be scaled up or down based on demand, ensuring applications perform well during traffic spikes without over-provisioning during quiet periods.
+- Elasticity: The ability to automatically adjust resources in real time based on current workload, often through auto-scaling groups or serverless architectures.
+- High Availability: Cloud providers distribute resources across multiple data centers and regions to ensure services remain available even if individual components fail.
+- Cost Optimization: Pay-per-use pricing means organizations only pay for what they consume. Reserved instances and spot instances offer further savings for predictable or flexible workloads.
+
+Cloud Security
+
+Security in the cloud follows a shared responsibility model. The cloud provider secures the infrastructure, while the customer is responsible for securing their data, access controls, and application configurations. Key security practices include encryption at rest and in transit, identity and access management (IAM), network security groups, and regular auditing.
+
+Serverless Computing
+
+Serverless computing allows developers to build and run applications without managing servers. The cloud provider automatically provisions, scales, and manages the infrastructure. AWS Lambda, Azure Functions, and Google Cloud Functions are popular serverless platforms. Developers write functions that are triggered by events such as HTTP requests, database changes, or message queue updates.
