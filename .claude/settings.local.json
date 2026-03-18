@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /Users/spothana/personal_projects/rag-beginner-basics/rag_beginner_basics/*.py)",
+      "Bash(xargs -I{} basename {})"
+    ]
+  }
+}

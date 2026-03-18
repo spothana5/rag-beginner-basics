@@ -100,11 +100,12 @@ rag-beginner-basics/
 │   └── main.py                 # CLI with ingest/query commands
 ├── tests/                      # Unit tests
 ├── data/sample_texts/          # Sample documents for testing
-├── notebooks/                  # Jupyter notebooks for experimentation
 ├── docs/                       # Detailed explanations of each module
+├── .env.example                # Environment variables template
+├── .gitignore                  # Git ignore rules
+├── CLAUDE.md                   # Claude Code guidance
 ├── pyproject.toml              # Dependencies and tool config
-├── Makefile                    # Development shortcuts
-└── TRAINING_GUIDE.md           # Step-by-step guide to build this from scratch
+└── Makefile                    # Development shortcuts
 ```
 
 ---
@@ -124,6 +125,7 @@ python -m rag_beginner_basics ingest --data-dir ./data/sample_texts
 | `--chunk-size` | `500` | Characters per chunk |
 | `--overlap` | `50` | Overlap between chunks |
 | `--collection` | `rag-basics` | ChromaDB collection name |
+| `--persist-dir` | `./vectordb_data/chromadb` | ChromaDB persist directory |
 
 ### Query documents
 
@@ -137,6 +139,7 @@ python -m rag_beginner_basics query "What are the benefits of cloud computing?"
 | `--top-k` | `3` | Number of chunks to retrieve |
 | `--model` | `gpt-4o-mini` | OpenAI model for generation |
 | `--collection` | `rag-basics` | ChromaDB collection name |
+| `--persist-dir` | `./vectordb_data/chromadb` | ChromaDB persist directory |
 
 ---
 
@@ -147,7 +150,6 @@ make setup       # Install all dependencies
 make test        # Run tests
 make lint        # Check code style
 make format      # Auto-format code
-make jupyter     # Launch Jupyter notebooks
 make clean       # Remove generated files
 ```
 
@@ -165,9 +167,10 @@ Each module has a detailed explanation in `docs/` with analogies, line-by-line b
 | 04 | [Vector Store](docs/04.VECTOR_STORE_EXPLANATION.md) | ChromaDB vs FAISS, similarity search, persistence |
 | 05 | [RAG Pipeline](docs/05.RAG_PIPELINE_EXPLANATION.md) | Orchestration, prompt template, LLM generation |
 | 06 | [Main CLI](docs/06.MAIN_EXPLANATION.md) | argparse, subcommands, entry points |
-| 07 | [Testing the CLI](docs/07.TESTING_THE_CLI.md) | Running ingest/query, troubleshooting |
+| 07 | [End-to-End RAG Flow](docs/07.END_TO_END_RAG_FLOW.md) | Complete pipeline trace with diagrams |
+| 08 | [Testing the CLI](docs/08.TESTING_THE_CLI.md) | Running ingest/query, troubleshooting |
 
-For a complete step-by-step guide to build this project from scratch, see [TRAINING_GUIDE.md](TRAINING_GUIDE.md).
+For a complete step-by-step guide to build this project from scratch, see [TRAINING_GUIDE.md](docs/TRAINING_GUIDE.md).
 
 ---
 

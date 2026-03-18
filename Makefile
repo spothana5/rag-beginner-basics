@@ -1,4 +1,4 @@
-.PHONY: setup dev-install test lint format jupyter docker-build docker-run docker-shell clean
+.PHONY: setup dev-install test lint format docker-build docker-run docker-shell clean
 
 # ── Standalone Setup ──────────────────────────────────────────────
 setup:
@@ -17,9 +17,6 @@ lint:
 format:
 	uv run ruff format .
 	uv run ruff check . --fix
-
-jupyter:
-	uv run jupyter notebook --notebook-dir=notebooks
 
 # ── Docker ────────────────────────────────────────────────────────
 docker-build:
